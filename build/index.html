@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang=en><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1"><title>Elegant E-Commerce Store</title><link rel=stylesheet href=Elegant%20store.7b503dfa.css><body>
+    <nav>
+        <div class=logo>Elegance Store</div>
+        <div class=search-container>
+            <input type=search id=searchInput placeholder="Search products..." autocomplete=off>
+        </div>
+        <button class=cart-button aria-label="Toggle shopping cart" aria-haspopup=true aria-expanded=false aria-controls=cartPanel>
+            <svg fill=currentColor aria-hidden=true viewBox="0 0 24 24"><path d="M7 18c-1.104 0-1.99.896-1.99 2s.886 2 1.99 2a2 2 0 0 0 0-4m10 0c-1.104 0-1.99.896-1.99 2s.886 2 1.99 2a2 2 0 0 0 0-4m-9.555-2.88L17.88 10l1.008-6H6.631l-1.291.16.134.388 1.92 1-2.209 9.064a.67.67 0 0 0 .666.848h9.153l.172-.352-2.23-4.717Z"/></svg>
+            
+        </button>
+    </nav>
+
+    <div class=container>
+        <aside class=side-carousel aria-label="Product promotional carousel">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Fashion promo 1" class=carousel-image>
+            <img src=https://i5.walmartimages.com/seo/Dog-Man-Good-Tour-Promo-Kids-Outfit-Set-Boys-Girls-Short-Sleeve-Graphic-T-Shirt-Shorts-2-Piece-Cartoon-Clothing-Summer-Play-Sleepwear-Casual-Wear_8419f6d1-0484-4085-ab1c-8a4110497adf.0c08392992c5fd5c334bfdeea17089cf.jpeg alt="Fashion promo 2" class=carousel-image style=display:none>
+            <img src=https://i.pinimg.com/736x/b9/05/ea/b905ea6c5be1b166c9925f73d32e90b3.jpg alt="Fashion promo 3" class=carousel-image style=display:none>
+            <div class=carousel-controls role=tablist aria-label="Carousel navigation">
+                <button aria-label="Slide 1" class=active></button>
+                <button aria-label="Slide 2"></button>
+                <button aria-label="Slide 3"></button>
+            </div>
+        </aside>
+
+        <main class=main-content>
+            <section class=categories role=group aria-label="Product categories">
+                <button class="active category-btn" data-category=all aria-pressed=true>All</button>
+                <button class=category-btn data-category=men aria-pressed=false>Men</button>
+                <button class=category-btn data-category=women aria-pressed=false>Women</button>
+                <button class=category-btn data-category=kids aria-pressed=false>Kids</button>
+            </section>
+
+            <section class=products aria-live=polite aria-label="Products listing">
+            </section>
+        </main>
+    </div>
+
+    
+    <section class=cart-panel id=cartPanel aria-live=polite aria-label="Shopping cart and checkout" aria-hidden=true>
+        <h2>Your Cart</h2>
+        <div class=cart-items aria-live=assertive aria-atomic=true></div>
+        <div class=cart-total aria-live=assertive aria-atomic=true></div>
+
+        <form class=user-details aria-label="User  purchase details" novalidate>
+            <label for=nameInput>Name *</label>
+            <input id=nameInput name=name placeholder="Your full name" required aria-required=true>
+            <label for=addressInput>Address *</label>
+            <textarea id=addressInput name=address placeholder="Street, City, Postal Code" required aria-required=true></textarea>
+            <label for=contactInput>Contact Number *</label>
+            <input type=tel id=contactInput name=contact placeholder="+1 234 567 8901" required aria-required=true pattern=\\+?[0-9\\s\\-]{6,15}>
+            <label for=emailInput>Email ID *</label>
+            <input type=email id=emailInput name=email placeholder=you@example.com required aria-required=true>
+            <button class=btn-confirm>Confirm Purchase</button>
+        </form>
+
+        <section class=invoice-container aria-label="Purchase invoice" role=region>
+            <h2>Invoice</h2>
+            <div class=invoice-content></div>
+            <button class=print-btn aria-label="Print Invoice">Print Invoice</button>
+        </section>
+    </section>
+
+    <script src=Elegant%20store.e6a98661.js></script>
+
+
